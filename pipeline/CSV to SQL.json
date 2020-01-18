@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "CSV to SQL",
 	"properties": {
 		"activities": [
 			{
