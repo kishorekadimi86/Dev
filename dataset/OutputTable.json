@@ -1,0 +1,39 @@
+{
+	"name": "OutputTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "kksqldb_conn",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Did",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Dname",
+				"type": "varchar"
+			},
+			{
+				"name": "Location",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

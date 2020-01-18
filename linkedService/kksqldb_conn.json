@@ -1,0 +1,12 @@
+{
+	"name": "kksqldb_conn",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=kksqlserver1.database.windows.net;initial catalog=kksqldb;user id=kadimi",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFERktLMV9hZjg3NzYxOC1hOWZmLTRiYzMtYWU2Yy0wODFhYmQ4Y2U3NjUiDQp9"
+		}
+	}
+}
