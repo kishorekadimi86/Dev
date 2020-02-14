@@ -1,0 +1,13 @@
+{
+	"name": "RestAPI",
+	"properties": {
+		"description": "API Soruce",
+		"linkedServiceName": {
+			"referenceName": "Linkedservice_API",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
