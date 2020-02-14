@@ -9,7 +9,7 @@
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
-					"retryIntervalInSeconds": 1,
+					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
 				},
@@ -38,7 +38,7 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['status']"
+									"path": "$['data'][0]['id']"
 								},
 								"sink": {
 									"ordinal": 1
@@ -46,7 +46,7 @@
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['id']"
+									"path": "$['data'][0]['employee_name']"
 								},
 								"sink": {
 									"ordinal": 2
@@ -54,7 +54,7 @@
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['employee_name']"
+									"path": "$['data'][0]['employee_salary']"
 								},
 								"sink": {
 									"ordinal": 3
@@ -62,7 +62,7 @@
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['employee_salary']"
+									"path": "$['data'][0]['employee_age']"
 								},
 								"sink": {
 									"ordinal": 4
@@ -70,18 +70,10 @@
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['employee_age']"
-								},
-								"sink": {
-									"ordinal": 5
-								}
-							},
-							{
-								"source": {
 									"path": "$['data'][0]['profile_image']"
 								},
 								"sink": {
-									"ordinal": 6
+									"ordinal": 5
 								}
 							}
 						]
