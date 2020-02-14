@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat('emp_file_',utcnow())",
+					"value": "@concat('emp_file_',utcnow(),'.txt')",
 					"type": "Expression"
 				},
 				"folderPath": "employee data",
