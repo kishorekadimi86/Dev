@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-api-to-datalake"
+		},
+		"datalaketgtconnection_accountKey": {
+			"value": ""
+		},
+		"datalaketgtconnection_properties_typeProperties_url": {
+			"value": "https://datalakekktgt.dfs.core.windows.net"
+		},
+		"restconnection_properties_typeProperties_url": {
+			"value": "http://dummy.restapiexample.com/api/v1/employees"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
