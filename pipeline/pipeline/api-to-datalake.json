@@ -83,7 +83,13 @@
 				"inputs": [
 					{
 						"referenceName": "RestResource",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"id": {
+								"value": "@pipeline().parameters.id",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
