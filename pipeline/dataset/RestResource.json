@@ -5,11 +5,6 @@
 			"referenceName": "restconnection",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"id": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
