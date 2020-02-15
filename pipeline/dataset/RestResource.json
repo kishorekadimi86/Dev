@@ -7,7 +7,8 @@
 		},
 		"parameters": {
 			"id": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "1"
 			}
 		},
 		"annotations": [],
