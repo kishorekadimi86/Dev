@@ -94,11 +94,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"id": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
