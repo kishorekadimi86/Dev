@@ -65,6 +65,11 @@
 					"referenceName": "restconnection",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"id": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "RestResource",
 				"typeProperties": {},
@@ -193,7 +198,12 @@
 							{
 								"referenceName": "RestResource",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"id": {
+										"value": "@pipeline().parameters.id",
+										"type": "Expression"
+									}
+								}
 							}
 						],
 						"outputs": [
@@ -205,6 +215,11 @@
 						]
 					}
 				],
+				"parameters": {
+					"id": {
+						"type": "string"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
